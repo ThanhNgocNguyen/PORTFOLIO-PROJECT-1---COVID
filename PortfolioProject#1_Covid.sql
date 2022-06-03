@@ -21,7 +21,7 @@ and continent is not null
 ORDER BY 1,2
 
 -- Looking at Total cases VS Population
--- Show what Percentage of Population got Covid
+-- Show what Percentage of Population got Covid in Vietnnam
 SELECT location,date,population,total_cases,total_deaths, (total_cases/population)*100 as PercentPopulationInfected
 FROM PortfolioProject..CovidDeaths$
 Where Location = 'Vietnam'
@@ -39,6 +39,7 @@ ORDER BY PercentPopulationInfected desc
 SELECT location, MAX(cast(total_deaths as int)) as TotalDeathCount
 FROM PortfolioProject..CovidDeaths$
 Where continent is null
+and location not in ('World', 'European Union', 'International')
 GROUP BY location
 ORDER BY TotalDeathCount desc
 
