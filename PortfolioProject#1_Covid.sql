@@ -1,6 +1,6 @@
-COVID 19 DATA EXPLORATION (24/2/2020 - 30/4/2021) (Done thanks to the instructions from AlexTheAnalyst)
+--COVID 19 DATA EXPLORATION (24/2/2020 - 30/4/2021) (Done thanks to the instructions from AlexTheAnalyst)
 
-Skills used: Joins, CTE, Temp Tables, Window Functions, Aggregate Functions, Converting Data Types, Creating Views
+--Skills used: Joins, CTE, Temp Tables, Window Functions, Aggregate Functions, Converting Data Types, Creating Views
 
 
 SELECT *
